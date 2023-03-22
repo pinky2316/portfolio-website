@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/09428f7636.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+     <!-- <div id="header">  -->
+         <div class="final">  
+    <nav>
+        <!-- <img src="logo.png" class="logo"> -->
+        <ul id="sidemenu">
+            <li><a href="#header"><i class="fa-sharp fa-solid fa-house"></i>  Home</a></li>
+            <li><a href="#about"><i class="fa-sharp fa-solid fa-address-card"></i>  About</a></li>
+            <li><a href="#services"><i class="fa-solid fa-grip-lines"></i> My services</a></li>
+            <li><a href="#portfolio"><i class="fa-sharp fa-solid fa-browser"></i>  Portfolio</a></li>
+            <li id="CV"><a href="priyankaresume1.pdf" target="_blank" download><i class="fa-solid fa-file-lines"></i>  Download resume</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-phone"></i>  Contact</a></li>
+            <!-- <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i> -->
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()" id="menu"></i>
+    </nav>
+ </div>
+
+ <div id="header"> 
+        <div id="container">
+           
+            <div class="header-text">
+                <!-- <p style="color: black;">UI/UX</p> -->
+                <span id="type"><h1>Hi , I am </h1></span> <br><br>
+                <p>I'm student at NITW with Computer Science Branch. <br>
+                My expertise are problem solving , design websites and many more...</p>
+               <!-- <img src="mypic.jpg" style="display: flex;float:right;" id="mainimg"> -->
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="selfphoto.jpg" height="450" width="10">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <br><br>
+                    <p>Hello, I am Priyanka Patel from Indore Madhya Pradesh,I have completed my higher education from Green Valley School Kanapur and My bachelors from Govt. Holkar Science College Indore(M.P). Currrently I am pursuing my masters (MCA) from National Institute of Technology Warangal(Telangana)  </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!--<p class="tab-links">Experience</p>-->
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                        <p class="tab-links"onclick="opentab('persionalinfo')">Persional Info</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                        <li><span>Hard Skills</span><br>C<hr><br>C++<hr><br>OOPs<hr><br>CSS<hr><br>HTML<hr><br>JAVASCRIPT<hr><br>PHP<hr><br>SQL<hr><br>JAVA<hr></li>
+                        <li><span>Soft Skills<hr></span><br>Team Work<hr><br>Problem Solving<hr><br>Communication</li>
+                        <!--<li><span>App Development</span><br>Building Android/ios apps</li>-->
+                      </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                          <li><span>2022-2025</span><br>Master's of computer application From National Institute Of Technology Warangal</li>
+                          <hr>
+                          <li><span>2016-2018</span><br>Bechalor of Science (Computer Science) from Govt. Holkar Science College Indore(M.P)</li>
+                          <hr>
+                          <li><span>Higher Secondary School (PCM)</span><br>Green Valley School Kanapur(M.P)</li>
+                          <hr>
+                          <li><span>High School (PCM)</span><br>Green Valley School Kanapur(M.P)</li>
+
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="persionalinfo">
+                        <ul>
+                          <li><span>Date Of Birth</span><br>23 september 2000</li>
+                          <hr>
+                          <li><span>E-mail</span><br>pinkypatel2316@gmail.com</li>
+                          <hr>
+                          <li><span>Phone NO.</span><br>7772044358</li>
+                          <hr>
+                          <li><span>Hometown</span><br>Khargone(M.P.)</li>
+                          <hr>
+                          <li><span>Nationality</span><br>Indian</li>
+                          
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+       <div class="services-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Problem solving</h2>
+            
+            <!-- <a href="#">learn more</a> -->
+        </div>
+        <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>Web Development</h2>
+            
+            <!-- <a href="#">learn more</a> -->
+        </div>
+        <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Coding</h2>
+            <!-- <a href="#">learn more</a> -->
+        </div>
+       </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Python-Snake-Game.webp" height="250px"  width="10px">
+                <div class="layer">
+                    <h3 style="color:black">Snake Game</h3>
+                   
+                    <a href="https://github.com/pinky2316/Snake-Game"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        <div class="work">
+            <img src="portimage.png" height="250px" width="10px">
+            <div class="layer">
+                <h3 style="color:black" >Personal Portfolio Website</h3>
+               
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    
+    
+    </div>
+    <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+    </div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+    <div id="contact">
+        <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" id="contacth1">Contact Me</h1>
+                <div class="social-icon">
+                    <br><br><br>
+                    Linked In&nbsp;&nbsp;<a href="https://www.linkedin.com/in/priyanka-patel-358ba325b/"><i class="fa-brands fa-linkedin"></i></a><br><br>
+                    Git-hub&nbsp;&nbsp;<a href="https://github.com/pinky2316"><i class="fa-brands fa-github"></i></a><br><br>
+                    Geek for Geeks&nbsp;&nbsp;<a href="https://auth.geeksforgeeks.org/user/priyankapa3hrf/practice/">GFG</a><br><br>
+                    Leetcode&nbsp;&nbsp;<a href="https://leetcode.com/PRIYANKA__PATEL/">leetcode</a>
+                 </div>
+        
+           </div>
+           <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <p style="color: aliceblue;">Catch Me Here...</p>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="Email" placeholder="Your Email" required>
+                <textarea name="Message"  rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+           </div>
+        </div>
+     </div>
+     <div class="copyright">
+        <p>Copyright © 2023 All rights reserved </p>
+     </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <form name="submit-to-google-sheet">
+        <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button>
+      </form>
+      
+      <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbz0racWQB7pEiWc1F4Sc_6myl2FfYhXiwI9ksOHk-7rii9dcNmvcidDqYq-auF_uyLW/exec>'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                 setTimeout(function()
+                 {
+                    msg.innerHTML=""
+                },5000)
+                  form.reset()
+                
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        let name=['P','R','I','Y','A','N','K','A'];
+        var index=0;
+        typeBody= document.getElementById("type");
+        function addLetter()
+        {
+            span=document.createElement("span");
+            span.textContent=name[index];
+            index++;
+            typeBody.appendChild(span);
+            if(index>name.length)
+            {
+                clearInterval(interval);
+            }
+        }
+        interval=setInterval(addLetter,100);
+      </script>
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
